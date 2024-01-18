@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulaire d'Inscription Compte Client</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="inscriptionForm">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required placeholder="Entrez votre nom">
+
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required placeholder="Entrez votre prénom">
+
+                <label for="civilite">Civilité :</label>
+                <select id="civilite" name="civilite" required>
+                    <option value="madame">Madame</option>
+                    <option value="monsieur">Monsieur</option>
+                </select>
+                
+                <label for="adresse">Adresse :</label>
+                <input type="text" id="adresse" name="adresse" required placeholder="Entrez votre adresse">
+
+                <label for="codePostal">Code Postal :</label>
+                <input type="text" id="codePostal" name="codePostal" required placeholder="Exemple: 67500">
+
+                <label for="ville">Ville :</label>
+                <input type="text" id="ville" name="ville" required placeholder="Entrez votre ville">
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required placeholder="Entrez votre email">
+
+                <label for="telephone">Téléphone :</label>
+                <input type="tel" id="telephone" name="telephone" required placeholder="Exemple : 0198765432">
+
+                <label for="login">Login :</label>
+                <input type="text" id="login" name="login" required placeholder="Entrez votre login">
+
+                <label for="mdp">Mot de passe :</label>
+                <input type="password" id="mdp" name="mdp" required placeholder="Entrez votre mot de passe">
+
+                <label for="confirmerMdp">Confirmation mot de passe :</label>
+                <input type="password" id="confirmerMdp" name="confirmerMdp" required placeholder="Confirmez votre mot de passe">
+
+                <button type="submit">S'inscrire</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
